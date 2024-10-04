@@ -453,7 +453,7 @@ footer .col-lg-7{
         left: 0;
     }
      .pr{
-         width: 550px !important ;
+         width: 450px !important ;
          text-align: center;
          border: 0;
      }
@@ -469,5 +469,9 @@ footer .col-lg-7{
             display: flex;
             flex-direction: column;
         }
+
+        .sec-1 span{
+            font-size: 20px;
+          }
    
     }
