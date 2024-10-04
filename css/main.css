@@ -1,0 +1,473 @@
+:root{
+    --text-color: #545454;
+
+}
+.t-color{
+    color: var(--text-color);
+}
+.inter {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  
+}
+
+.navbar img{
+    width: 170px;
+    
+}
+
+.photo-2 {
+    position: relative; 
+    margin-top: 30px;
+    margin-left: -100px;
+}
+
+.photo-2::before {
+    content: '';
+    position: absolute; 
+    width: 40%;
+    height: 50%;
+    left: -40px;
+    top: -20px; 
+    z-index: -1; 
+    border: 3px solid black;
+}
+
+.photo-2::after {
+    content: '\f063';
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+    position: absolute; 
+    width: 100px; 
+    height: 100px;
+    right: -60px;
+    bottom: 0; 
+    background-color: black;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.sec-1 .col-lg-8 span{
+    font-size: 70px;
+    font-weight: 300;
+}
+
+
+
+/* sec 2 */
+.sec-2 h2::before{
+    content: '';
+    position: absolute;
+    top:20px;
+    left: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: black;
+}
+
+.sec-2-photo{
+    width: 60px;
+    height: 60px;
+
+}
+
+.sec-4 i{
+    background-color: black;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec-4 i.rocket::after{
+    content: '';
+    width: 2px;
+    height: 60px ;
+    background-color: gray;
+    position: relative;
+    top: 62px;
+    right: 10px;
+
+}
+.sec-4 i.lamb::after{
+    content: '';
+    width: 2px;
+    height: 60px ;
+    background-color: gray;
+    position: relative;
+    top: 70px;
+    right: 10px;
+
+}
+/* sec 5 */
+.pr{
+    padding: 20px;
+    margin-top: 25px;
+    width: 700px;
+    height:  550px;
+    background-color: black;
+    border: white solid 20px;
+}
+.sec-5-content{
+    position:absolute;
+    content: '';
+    left:150px;
+    top: 150px;
+}
+.pr h1{
+    font-size: 60px;
+}
+.t2-color{
+    color: #929292;
+}
+.sec-5 .icons i{
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+.sec-5 h1.title{
+    left: 50%;
+    
+    top: -100px;
+}
+.sec-5 .icons{
+    position: absolute;
+    top: 85%;
+    left: -13%;
+}
+
+/* sec-6 */
+.sec-6{
+    margin-top: 150px;
+}
+.sec-6 .form{
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+}
+
+.sec-6 input{
+    width: 400px;
+    padding: 15px 30px;
+}
+
+.sec-6 button{
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* footer */
+
+footer{
+    background-color: #1F1F1F;
+}
+
+footer i{
+    margin: 0 3px;
+    padding: 5px;
+    background-color: #313131;
+}
+
+footer .col-lg-7{
+    gap: 100px;
+}
+.t3-color{
+    color: #D1D1D1;
+}
+
+
+
+  
+@media screen and (max-width: 1200px) and (min-width: 1000px){
+
+    .sec-5 .col-lg-6{
+        margin: auto !important;
+    }
+    .sec-5 .col-lg-10{
+       display: flex;
+       flex-direction: column;
+    }
+    .pr{
+        width: 700px !important ;
+        text-align: center;
+    }
+    .pr div img{
+        margin: auto;
+    }
+    .custumer{
+        display: block !important;
+    }
+    .sec-5 h1.title{
+        left: 25%;
+        
+        top: -100px;
+    }
+  .sec-5-content{
+    position: relative;
+    top: 110px  ;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sec-5 .icons{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+   
+}
+      
+@media screen and (max-width: 1000px) and (min-width: 991px){
+
+    .sec-5 .col-lg-6{
+        margin: auto !important;
+       
+    }
+    .sec-5 .col-lg-10{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .sec-5 .col-lg-10{
+        display: flex;
+        flex-direction: column;
+     }
+     .pr{
+         width: 700px !important ;
+         text-align: center;
+     }
+     .pr div img{
+         margin: auto;
+     }
+     .custumer{
+         display: block !important;
+     }
+     .sec-5 .icons{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+  .sec-5-content{
+    position: relative;
+    top: 0  ;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+    .photo-2{
+      margin-left: 0;
+    }
+  
+ 
+ 
+
+}
+
+  @media screen and (max-width: 991px) and (min-width: 651px){
+    .photo-2 img{
+        width: 88% !important;
+        left: 100px;
+    }
+    .photo-2::before {
+        content: '';
+        position: absolute; 
+        width: 20%;
+        height: 30%;
+        left: 30px;
+        top: -20px; 
+        z-index: -1; 
+        border: 3px solid black;
+    }
+    .sec-5 .col-lg-6{
+        margin: auto !important;
+    }
+
+  .sec-5-content{
+    position: relative;
+    top: 60px  ;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+  }
+
+    .sec-5 h1.title{
+        left: 10%;
+        
+        top: -60px;
+    }
+   
+     .pr{
+         width: 550px !important ;
+         text-align: center;
+         border: 0;
+     }
+     .pr div img{
+         margin: auto;
+     }
+     .custumer{
+         display: block !important;
+     }
+    .sec-1 span{
+        font-size: 50px;
+     }
+     .sec-5 .icons{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+        
+
+
+  }
+  @media screen and (max-width: 651px) {
+       
+  .sec-1 span{
+    font-size: 40px;
+  }
+    .photo-2 img{
+        width: 85% !important;
+        left: 90px;
+    }
+    .photo-2::before {
+        content: '';
+        position: absolute; 
+        width: 20%;
+        height: 30%;
+        left: 70px;
+        top: -20px; 
+        z-index: -1; 
+        border: 3px solid black;
+    }
+      .photo-2::after {
+          content: '\f063';
+          font-family: 'Font Awesome 5 Free'; 
+          font-weight: 900;
+          color: white;
+          position: absolute; 
+          width: 70px;
+          height: 70px;
+          right: -30px;
+          bottom: 0; 
+          background-color: black;
+      }
+      .sec-1 .col-lg-8 span{
+        font-size: 60px;
+        font-weight: 200;
+    }
+
+    .sec-5 .col-lg-6{
+        margin: auto !important;
+    }
+    .sec-5 .icons{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+    .sec-5-content{
+        position: relative;
+        top: 100px  ;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+      }
+    
+        .sec-5 h1.title{
+            left: 20%;
+            
+            top: -70px;
+        }
+       
+         .pr{
+             width: 550px !important ;
+             text-align: center;
+             border: 0;
+         }
+         .pr div img{
+             margin: auto;
+         }
+         .custumer{
+             display: block !important;
+         }
+
+ 
+}
+      
+  
+  @media screen and (max-width: 600px) and (min-width: 200px){
+    .photo-2::before {
+        content: '';
+        position: absolute; 
+        width: 30%;
+        height: 30%;
+        left: 84px;
+        top: -20px; 
+        z-index: -1; 
+        border: 3px solid black;
+    }
+      .photo-2::after {
+          content: '\f063';
+          font-family: 'Font Awesome 5 Free'; 
+          font-weight: 900;
+          color: white;
+          position: absolute; 
+          width: 60px;
+          height: 60px;
+          right: -20px;
+          bottom: 0; 
+          background-color: black;
+      }
+
+      
+      .sec-5 .col-lg-6{
+        margin: auto !important;
+    }
+
+   
+  .sec-5-content{
+    position: relative;
+    top: 60px  ;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+  }
+
+    .sec-5 h1.title{
+        left: 10%;
+        
+        top: -60px;
+    }
+   
+    .sec-5 .icons{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+     .pr{
+         width: 550px !important ;
+         text-align: center;
+         border: 0;
+     }
+     .pr div img{
+         margin: auto;
+     }
+     .custumer{
+         display: block !important;
+     }
+    
+        footer .col-lg-7{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+   
+    }
